@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- Responsive Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon Tag -->
+    <link rel="icon" type="image/png" href="img/warzone.png">
+    <title>DESAFIO 02 - JAVASCRIPT </title>
+    <meta name="description" content="Separaçao de turmas do curso de desenvolvimento de sistemas">
+    <meta name="keywords" content="Turmas, teste, desenvolvimento de sistemas, DEV, Lellis, Amaral">
+    <meta name="author" content="joão pedro Cavalcante Scrivani">
+    <link rel="stylesheet" href="css/style.css">
+   
+    
+</head>
+
+<body>
+    <h1>Desafio 2</h1>
+    <hr>
+    <h2 id="resultado"></h2>
+
+    <script>
+        let num1 = parseFloat (window.prompt("Digite um número:"));
+        let num2 = parseFloat (window.prompt("Digite outro número:"));
+        let operacao = window.prompt("Digite + ou -");
+        let resultado = 0
+
+        if (operacao == "+") {
+            resultado = num1 + num2
+        } else {
+            resultado = num1 - num2
+        }
+
+        document.getElementById("resultado").innerText = "o resultado da operação é: " + resultado
+</script>
+
+</body>
+
+</html>
+

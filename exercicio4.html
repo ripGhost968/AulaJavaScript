@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- Responsive Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon Tag -->
+    <link rel="icon" type="image/png" href="img/warzone.png">
+    <title>EXERCICIO 04 - JAVASCRIPT </title>
+    <meta name="description" content="Separaçao de turmas do curso de desenvolvimento de sistemas">
+    <meta name="keywords" content="Turmas, teste, desenvolvimento de sistemas, DEV, Lellis, Amaral">
+    <meta name="author" content="joão pedro Cavalcante Scrivani">
+    <link rel="stylesheet" href="css/style.css">
+   
+    
+</head>
+
+<body>
+    <h1>Integrando os recursos de interatividade do JS</h1>
+    <hr>
+    <script>
+        window.alert("Seja bem-vindo ao site");
+        let nome = window.prompt("QUAL É O SEU NOME?");
+        window.alert(nome);
+        console.log(nome);
+        let resposta = window.confirm("Você deseja sair da página? ");
+        console.log(resposta);
+        document.write("SEJA BEM-VINDO " + nome)
+
+        if(resposta==true){
+            setTimeout(() => {
+                window.open("index.html");
+            }, 3000); // 3000 milisegundos = 3 segundos
+
+        }else{
+            window.confirm(nome + ", você vai continuar nessa página!")
+        }
+    </script>
+
+</body>
+
+</html>
+
